@@ -1,0 +1,7 @@
+services:
+  webserver:
+    image: nginx:latest
+    container_name: nginx_web
+    ports:
+      - "80:80"
+    restart: unless-stopped
